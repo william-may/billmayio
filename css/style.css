@@ -10,43 +10,137 @@ html, body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
-nav {
-    position: fixed;
-    height: 50px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, .5);
-    z-index: 99;
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
     text-align: center;
 }
 
-nav a {
-    text-decoration: none;
-    color: white;
-    margin-left: 30px;
-    line-height: 50px;
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
 }
-.sect {
+
+article {
     height: 100%;
     background-size: cover;
     background-attachment: fixed;
 }
 
+article section.left {
+    
+    width: 80%;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+
+.border {
+    border-right-color: black;
+    border-right-style: solid;
+    border-right-width: 1px;
+    padding-right: 25px;
+ 
+}
+
+article section.left div h4{
+    margin-left: 20px;
+}
+
+
+article section.principles {
+    float: right;
+    width: 30%;   
+    margin-right: 60px; 
+    /*visibility: hidden;*/
+    position: fixed;
+    margin-left: 60%;
+}
+
+article section.principles div{
+    float: left;
+      
+}
+
+.odd {
+    background-image: url("../img/even-background.jpg");   
+    padding: 50px;
+    color: #000000;
+
+}
+
+
+.even {
+    background-image: url("../img/Light-Grey-Background-Hd-5-1.jpg");    
+    padding: 50px;
+    color: #000000;
+}
+
+article div{
+    margin-top: 50px;
+    margin-bottom: 50px; 
+}
+
+
 .subSection {
-    height: 50%;
-    background-color: bisque;
+    height: 25%;
+    background-color: #777777;
 }
 
-.sectionOne {
-    background-image: url("../img/background-9e33.jpg");
+.techExpertise ul {
+    list-style: none;
 }
 
-.sectionTwo {
-    background-image: url("../img/blackboard-background-1893.jpg");
+footer {
+    text-align: center;
+    height: 8%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 99;
 }
 
-.sectionThree {
-    background-image: url("../img/background-9e33.jpg");
+.experienceTitle {
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.experienceTitle h1 {
+    margin-top: -10px;
+}
+
+.job {
+    margin-left: 20px;
+    margin-top: -20px;
+    margin-bottom: 0px;     
+}
+
+.jobHeader {   
+    display: inline;    
+}
+
+.company {
+    margin-top: 0px;
+    margin-bottom: -15px;
+}
+
+.jobTitle {    
+    margin-top: 0px;
+    margin-bottom: 0px;
+    float: left;
+}
+
+.jobDates {    
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 50px;
+    float: right;
+}
+
+.jobDescription {    
+    margin-top: 0px;
+    margin-bottom: 10px;
+    display: inline-block;
 }

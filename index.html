@@ -1,27 +1,347 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title>Bill's Corner</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/bootstrap-social/5.1.1/bootstrap-social.css" rel="stylesheet" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <nav>
-        <a id="home" href="#homeDiv">HOME</a>
-        <a id="resume" href="#resumeDiv">RESUME</a>
-        <a id="projects" href="#projectsDiv">PROJECTS</a>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li><a id="home" href="#homeArticle">HOME</a></li>
+                <li><a id="resume" href="#experienceArticle">EXPERIENCE</a></li>
+                <li><a id="projects" href="#projectsArticle">PROJECTS</a></li>
+            </ul>
+        </div>
     </nav>
 
-    <div id="homeDiv" class="sect sectionOne"></div>
-    <div class="subSection"></div>
-    <div id="resumeDiv" class="sect sectionTwo"></div>
-    <div class="subSection"></div>
-    <div id="projectsDiv" class="sect sectionThree"></div>
+    <article id="homeArticle" class="odd">
 
-    <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
+
+        <section class="left">
+            <div>
+                <h1>About Me</h1>
+            </div>
+
+            <div>
+                <h3>Professional:</h3>
+                <h4>
+                    An accomplished, confident Software Engineer with 15 years of development experience specializing in developing web applications
+                    primarily been using JAVA with the Spring and Hibernate frameworks.
+                </h4>
+
+                <h4>
+                    I have extensive experience in the full lifecycle of the software development lifecycle including requirements definition,
+                    prototyping, design, implementation, testing and maintenance.
+                </h4>
+                <h4>
+                    While I can focus on either the front end or back end of an application I do not shy away from being a full stack developer.
+                    I actually quite enjoy the challenges and satisfaction that being a full stack developer brings.
+                </h4>
+
+            </div>
+
+            <div>
+                <h3>
+                    Summary of Qualifications:
+                </h3>
+                <ul>
+                    <li>
+                        <h5> Expertise in Object-Oriented Analysis/Design and development. </h5>
+                    </li>
+                    <li>
+                        <h5>Experience with various software development methodologies including Agile, TDD and XP.</h5>
+                    </li>
+                    <li>
+                        <h5>Strong working knowledge of J2EE with experience in various frameworks.</h5>
+                    </li>
+                    <li>
+                        <h5>Solid working knowledge of .NET</h5>
+                    </li>
+                    <li>
+                        <h5>Solid communication skills.</h5>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="techExpertise">
+                <h3>
+                    Technical Expertise
+                </h3>
+                <ul>
+                    <li>
+                        <strong>Languages:</strong> Java, C#, ASP.NET, SQL, HTML, CSS, JavaScript
+                    </li>
+                    <li>
+                        <strong>Frameworks:</strong> Hibernate, JSP, Spring, Spring MVC, Struts, Adobe Flex and ASP.NET MVC
+                        3, JQuery
+                    </li>
+                    <li>
+                        <strong>Software:</strong> Eclipse, Spring Tool Suite, Visual Studio 2008 & 2010, Maven, IBM Rational
+                        Team Concert
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>
+                    Personal:
+                </h3>
+                <h4>
+                    I am a father of four daughters, musician and gamer. My current favorite shows are Game of Thones and The Walking Dead.
+                </h4>
+                <h4>
+                    Having four daughters has taught me to be an empathetic listener, which is a trait that I value very much. Finally, I try
+                    to find humor in every situation I currently am as I have found that a good laugh can get you past most
+                    obtacles your currently facing.
+                </h4>
+            </div>
+
+
+        </section>
+
+        <!--
+        <section class="principles">
+            <div>
+                <h1>Some Random Software Principle</h1>
+                <div class="principleOfTheDay">
+                    <h1>DESIGN PRINCIPLES</h1>
+                    <h4>DESIGN PRINCIPLES DESCRIPTION</h4>
+                </div>
+        </section>
+        -->
+    </article>
+
+    <div class="subSection"></div>
+
+    <article id="experienceArticle" class="odd">
+
+        <section class="left">
+
+            <div class="experienceTitle">
+                <h1>Professional Experience</h1>
+            </div>
+
+
+            <div class="job">
+                <div class="jobHeader">
+                    <div class="company">
+                        <h3>Sirrus 7</h3>
+                    </div>
+                    <div class="jobTitle">
+                        <h4>Software Engineer</h4>
+                    </div>
+                    <div class="jobDates">
+                        <h4>July 2017 – Present </h4>
+                    </div>
+                </div>
+                <div class="jobDescription">
+                    <h5>
+                        Collaborated as part of a team whose goal is to integrate an existing presentation layer primarily developed using AngularJs
+                        and NodeJS with a third party IOT platform. My primary tasks included familiarizing myself with the
+                        IOT platform, analyzing the current functionality of the platform to identify any shortfalls that
+                        would either cause a blocker in meeting the project requirements or put the project deadline at risk.
+                    </h5>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="jobHeader">
+                    <div class="company">
+                        <h3>Hewlett Packard/DXC</h3>
+                    </div>
+                    <div class="jobTitle">
+                        <h4>Software Consultant</h4>
+                    </div>
+                    <div class="jobDates">
+                        <h4>Feb 2006 – July 2017</h4>
+                    </div>
+                </div>
+                <div class="jobDescription">
+                    <h5>
+                        Served as a software consultant and lead developer that has successfully completed projects for several customers including
+                        the US Army Recruiting Command, US Air Force and US Navy Cyber Warfare commands and the Veterans
+                        Health Administration. All of these projects were Java EE based stacks. I have been using Java, JSP,
+                        HTML, CSS, Hibernate, Spring and Spring MVC for the last 4 years while working with the Veterans
+                        Health Administration.
+                    </h5>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="jobHeader">
+                    <div class="company">
+                        <h3>ToBe-Green</h3>
+                    </div>
+                    <div class="jobTitle">
+                        <h4>Software Consultant</h4>
+                    </div>
+                    <div class="jobDates">
+                        <h4>Mar 2011 – June 2012</h4>
+                    </div>
+                </div>
+                <div class="jobDescription">
+                    <h5>
+                        Served as a software consultant that worked on several, sometimes concurrent projects including Helped architect and develop
+                        an Android phone point of sale application that allowed resellers to buy and sell cell phone minutes.
+                        Using ASP.NET MVC3 I develop web interfaces and the core framework for the BPC bank of Angola. Migrated
+                        SharePoint 2007 application to SharePoint 2010. Redesigned the UI to a more modern look and feel.
+                    </h5>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="jobHeader">
+                    <div class="company">
+                        <h3>Seattle Seahawks</h3>
+                    </div>
+                    <div class="jobTitle">
+                        <h4>Software Consultant</h4>
+                    </div>
+                    <div class="jobDates">
+                        <h4>June 2010</h4>
+                    </div>
+                </div>
+                <div class="jobDescription">
+                    <h5>
+                        Using ASP.NET developed a visitor check in application to ease the process of visitors checking into Seahawks 2010 training
+                        camp.
+                    </h5>
+                </div>
+            </div>
+            <div class="job">
+                <div class="jobHeader">
+                    <div class="company">
+                        <h3>Synesis 7</h3>
+                    </div>
+                    <div class="jobTitle">
+                        <h4>Software Engineer</h4>
+                    </div>
+                    <div class="jobDates">
+                        <h4>Dec 2003 – Feb 2006</h4>
+                    </div>
+                </div>
+                <div class="jobDescription">
+                    <h5>
+                        Participated as a member of a medium sized team that was tasked with transferring F-18 maintenance manuals from paper to
+                        electronic format. Using Omnipage Capture SDK I created an OCR application that allowed a single
+                        user to scan multiple pages into electronic format. The mark up was then persisted and presented
+                        to the end user in HTML format using Java, JSP and Hibernate. The initial release of this project
+                        drastically reduced the cost of scanning of manuals into an electronic format.
+                    </h5>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="jobHeader">
+                    <div class="company">
+                        <h3>E2S</h3>
+                    </div>
+                    <div class="jobTitle">
+                        <h4>Software Engineer</h4>
+                    </div>
+                    <div class="jobDates">
+                        <h4>Jan 2001 – Dec 2003</h4>
+                    </div>
+                </div>
+                <div class="jobDescription">
+                    <h5>
+                        Participated as a member of a small team that designed and implemented a Java/JSP/Swing solution that handled the day to
+                        day tasks of small to medium sized schools. The solution was a multi-tiered application that allowed
+                        our customers to manage a student’s day to day progress by tracking a student’s attendance, grades
+                        and disciplinary actions.
+                    </h5>
+                </div>
+            </div>
+
+        </section>
+    </article>
+
+    <div class="subSection"></div>
+    <article id="projectsArticle" class="odd">
+
+        <section class="left">
+
+
+            <div>
+                <h1>PROJECTS WILL GO HERE</h1>
+            </div>
+
+
+
+            <div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse laoreet purus id fringilla tempus. Mauris aliquet velit
+                eget risus facilisis dapibus. Nullam sed tellus eu augue fringilla pulvinar non semper dolor. Aliquam varius
+                dapibus viverra. Nunc id placerat dui. Phasellus ut lectus interdum dolor bibendum porta eu et augue. Nunc
+                vitae nibh et tortor semper blandit a non urna. Fusce facilisis nec orci aliquet rutrum. Sed accumsan elementum
+                risus eu ullamcorper. Sed posuere nec metus non tristique. Vivamus auctor nisi enim, id lacinia justo fermentum
+                eu. Mauris efficitur lorem quis ullamcorper interdum. Donec est est, egestas nec tempus ut, sagittis eget
+                dui.
+            </div>
+
+            <div>
+                Aliquam erat volutpat. Vestibulum massa quam, interdum sit amet finibus nec, commodo non risus. Pellentesque volutpat, purus
+                at feugiat lacinia, erat velit cursus risus, sed aliquam lacus enim fringilla libero. In et placerat nisl.
+                Quisque nunc massa, volutpat id facilisis vel, consectetur non tortor. Suspendisse potenti. Fusce suscipit
+                porta risus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                Donec vel odio odio. Vivamus sed sem mi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia Curae; Nulla efficitur aliquam risus, sit amet gravida odio finibus vitae.
+            </div>
+
+            <div>
+                Nunc sodales vitae nunc vel mattis. In dapibus tellus sed ipsum ullamcorper, sed efficitur erat semper. Quisque massa magna,
+                sollicitudin malesuada risus vel, volutpat vulputate velit. Ut quis lectus neque. Nullam sed libero et massa
+                iaculis egestas eu eget libero. Pellentesque dignissim pulvinar justo, nec molestie augue rutrum eget. Nullam
+                lectus velit, sagittis vel eros sed, pulvinar tristique leo. Sed finibus metus eu enim sagittis, sit amet
+                porta ex sodales. Etiam aliquet dolor id ex mattis, id interdum tellus faucibus.
+            </div>
+
+            <div>
+                Morbi sollicitudin quam ex, non malesuada orci hendrerit eleifend. Etiam scelerisque mauris sit amet nisl feugiat volutpat.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras cursus, tortor quis eleifend consectetur, quam
+                turpis cursus ex, a commodo ipsum turpis ac nulla. Morbi rutrum ipsum at diam blandit tempor. Aliquam tempor
+                sapien sed ex malesuada dictum. Praesent sit amet enim a nulla eleifend tristique.
+            </div>
+
+            <div>
+                Donec rutrum tellus id ipsum mattis iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse ac
+                urna ligula. Nunc luctus, elit ac malesuada condimentum, nibh arcu interdum nisl, at imperdiet nulla dolor
+                sit amet urna. Suspendisse ut vestibulum elit. Donec feugiat finibus tortor, et aliquam orci convallis ut.
+                Proin quis elit nec massa faucibus venenatis ut vitae est. In interdum finibus quam, dictum facilisis mi
+                sagittis tempus. Praesent fringilla, tortor ut placerat molestie, orci erat efficitur nisi, ac suscipit arcu
+                magna sed leo. Integer eleifend sit amet ligula at molestie. Nullam scelerisque mattis nisl, in dignissim
+                ex finibus quis. Vivamus ornare, lacus et mollis facilisis, quam libero viverra turpis, sed interdum orci
+                tortor et lacus. Pellentesque hendrerit porttitor velit.
+            </div>
+
+        </section>
+    </article>
+
+    <footer class="navbar navbar-fixed-bottom">
+        <h3></h3>
+        <div>
+            <a class="btn btn-social-icon btn-linkedin" href="https://www.linkedin.com/in/bill-may-5a845755/" target="_blank">
+                                    <span class="fa fa-linkedin"></span>
+                                </a>
+            <a class="btn btn-social-icon btn-github" href="https://github.com/william-may" target="_blank">
+                                    <span class="fa fa-github"></span>
+                                </a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>
