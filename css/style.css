@@ -25,7 +25,7 @@ p {
 }
 
 #head {
-    min-height: 245px;
+    min-height: 275px;
     color: #fff;
     text-align: center;
 }
@@ -38,7 +38,7 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 255px;
+    height: 275px;
     z-index: -1;
     opacity: 0.4;
 }
@@ -48,7 +48,7 @@ p {
     width: 100%;
 }
 #head h4 {
-    padding-top: 15px;
+    padding-top: 0px;
     padding-bottom: 0;
     color: white;
 }
@@ -91,6 +91,10 @@ p {
     padding: 2em;
 }
 
+#projects p{
+  padding-top: 1px;
+}
+
 #projects .card-content h3{
     background-color: #eaeaea;
 }
@@ -130,6 +134,12 @@ p {
 
   /* Media Queries */  
 @media (min-width: 700px) {
+
+    #head h4 {
+        padding-top: 65px; 
+    }
+
+
     #projects .grid {
         display: grid;
         grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
