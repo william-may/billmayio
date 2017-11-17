@@ -1,146 +1,153 @@
-/* Reset ALL margins */
-* {
+body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
 }
-
-
-
-html, body {
-    height: 100%;
-}
-
-h1, h2, h3, h4, h5, h6, p {
-    margin-bottom: 10px;
-}
-
-.navbar-nav {
-    float:none;
-    margin:0 auto;
+  
+img {
     display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 1em 0;
+}
+
+p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+#head {
+    min-height: 245px;
+    color: #fff;
     text-align: center;
 }
 
-.navbar-nav > li {
-    display: inline-block;
-    float:none;
-}
-
-article {
-    height: 100%;
+#head .bg-image {
+    position: absolute;
+    background: #333
+        url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    width: 100%;
+    height: 255px;
+    z-index: -1;
+    opacity: 0.4;
 }
 
-article section.left {
-    
-    width: 80%;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-
-
-.border {
-    border-right-color: black;
-    border-right-style: solid;
-    border-right-width: 1px;
-    padding-right: 25px;
- 
-}
-
-article section.left div h4{
-    margin-left: 20px;
-}
-
-
-article section.principles {
-    float: right;
-    width: 30%;   
-    margin-right: 60px; 
-    /*visibility: hidden;*/
-    position: fixed;
-    margin-left: 60%;
-}
-
-article section.principles div{
-    float: left;
-      
-}
-
-.odd {
-    background-image: url("../img/even-background.jpg");   
-    padding: 50px;
-    color: #000000;
-
-}
-
-
-.even {
-    background-image: url("../img/Light-Grey-Background-Hd-5-1.jpg");    
-    padding: 50px;
-    color: #000000;
-}
-
-article div{
-    margin-top: 50px;
-    margin-bottom: 50px; 
-}
-
-
-.subSection {
-    height: 25%;
-    background-color: #777777;
-}
-
-.techExpertise ul {
-    list-style: none;
-}
-
-footer {
+.content-wrap h3 {
     text-align: center;
-    height: 8%;
-    background-color: rgba(0, 0, 0, .5);
-    z-index: 99;
+    width: 100%;
+}
+#head h4 {
+    padding-top: 15px;
+    padding-bottom: 0;
+    color: white;
 }
 
-.experienceTitle {
-    margin-top: 40px;
-    margin-bottom: 10px;
+#head .content-wrap,
+#professional .content-wrap {
+    padding: 0 1.5em;
 }
 
-.experienceTitle h1 {
-    margin-top: -10px;
+#professional {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
 
-.job {
-    margin-left: 20px;
-    margin-top: -20px;
-    margin-bottom: 0px;     
+#professional ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
 }
 
-.jobHeader {   
-    display: inline;    
+#professional li {
+    margin-bottom: 1em;    
+    color: #333;    
 }
 
-.company {
-    margin-top: 0px;
-    margin-bottom: -15px;
+#professional .card {
+    background-color: white;
 }
 
-.jobTitle {    
-    margin-top: 0px;
-    margin-bottom: 0px;
-    float: left;
+.card-content {
+    padding: 1.5em;
 }
 
-.jobDates {    
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 50px;
-    float: right;
+#projects {
+    background: #fff;
+    color: #333;
+    padding: 2em;
 }
 
-.jobDescription {    
-    margin-top: 0px;
-    margin-bottom: 10px;
-    display: inline-block;
+#projects .card-content h3{
+    background-color: #eaeaea;
+}
+
+#projects h4{
+    text-align: left;
+}
+
+#projects ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#projects li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+    text-align: left;
+}
+
+/* Footer */
+#main-footer {
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+#main-footer a {
+    color: #2690d4;
+    text-decoration: none;
+}
+
+  /* Media Queries */  
+@media (min-width: 700px) {
+    #projects .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    }
+
+    .content-wrap,
+    #projects ul {
+        grid-column: 2/4;
+    }
+
+    .box,
+    #main-footer div {
+        grid-column: span 2;
+    }
+
+    #projects ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #projects li {
+        width: 31%;
+    }
 }
