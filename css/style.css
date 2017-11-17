@@ -120,10 +120,13 @@ p {
     text-align: center;
 }
 
-#main-footer a {
-    color: #2690d4;
-    text-decoration: none;
+.fa {
+    color: white;
+    font-size: 2.1em;
+    padding: .1em .2em;
 }
+
+
 
   /* Media Queries */  
 @media (min-width: 700px) {
